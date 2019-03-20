@@ -549,3 +549,12 @@ Processing by SchoolClassesController#index as HTML
 Completed 200 OK in 576ms (Views: 571.8ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/school_classes" for 193.37.253.115 at 2019-03-20 22:00:51 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SchoolClassesController#index as HTML
+  Rendering school_classes/index.html.erb within layouts/application
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 627ms (Views: 604.5ms | ActiveRecord: 0.3ms)
+
+
