@@ -618,3 +618,36 @@ Processing by SchoolClassesController#show as HTML
 Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/school_classes/new" for 193.37.253.115 at 2019-03-20 22:12:35 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SchoolClassesController#new as HTML
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 219ms (Views: 211.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/school_classes/new" for 193.37.253.115 at 2019-03-20 22:12:39 +0000
+Processing by SchoolClassesController#new as HTML
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/school_classes" for 193.37.253.115 at 2019-03-20 22:12:44 +0000
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K96MjpzIJ7xAfQICMwsC7f9umh0ONnHtOYijkazgZVp+Pcizx3RPqCEbDzYKqwdIZiORfkTQeWV5SIxKE1S9rA==", "school_class"=>{"title"=>"Chem", "room_number"=>"121"}, "commit"=>"Create Class"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (<ActionController::Parameters {"utf8"=>"✓", "authenticity_token"=>"K96MjpzIJ7xAfQICMwsC7f9umh0ONnHtOYijkazgZVp+Pcizx3RPqCEbDzYKqwdIZiORfkTQeWV5SIxKE1S9rA==", "school_class"=>{"title"=>"Chem", "room_number"=>"121"}, "commit"=>"Create Class", "controller"=>"school_classes", "action"=>"create"} permitted: false>):
+  
+app/controllers/school_classes_controller.rb:10:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (12.5ms)
