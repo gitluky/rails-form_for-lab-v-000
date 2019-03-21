@@ -1,5 +1,5 @@
 class SchoolClass < ApplicationRecord
-  def title_and_room
+  def to_s
     self.title + " - " + self.room_number.to_s
   end
 end
