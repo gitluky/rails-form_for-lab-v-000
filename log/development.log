@@ -984,3 +984,11 @@ Processing by SchoolClassesController#index as HTML
 Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/school_classes/new" for 193.37.253.115 at 2019-03-21 00:16:46 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SchoolClassesController#new as HTML
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 216ms (Views: 195.9ms | ActiveRecord: 0.0ms)
+
+
