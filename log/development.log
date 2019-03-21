@@ -876,3 +876,14 @@ Processing by SchoolClassesController#index as HTML
   Rendering school_classes/index.html.erb within layouts/application
   [1m[36mSchoolClass Load (0.3ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
   Rendered school_classes/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 160ms (Views: 157.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/school_classes" for 193.37.253.115 at 2019-03-21 00:02:35 +0000
+Processing by SchoolClassesController#index as HTML
+  Rendering school_classes/index.html.erb within layouts/application
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.1ms)
+
+
